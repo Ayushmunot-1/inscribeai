@@ -30,7 +30,7 @@ vectordb = Chroma(
     client=client,
 )
 
-def get_retrieval_qa(model_name="llama-3-70b-8192"):
+def get_retrieval_qa(model_name="llama-3.1-8b-instant"):
     """Return RetrievalQA chain using Groq LLM"""
     llm = ChatGroq(
          model="llama-3.1-8b-instant",
